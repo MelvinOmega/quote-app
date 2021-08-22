@@ -19,20 +19,10 @@ export class detailsComponent implements OnInit {
     toggleDetails(index:number) {
         this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
-    // deleteGoal(isComplete: boolean, index: numbetr) {
-    //     if(isComplete){
-    //         let toDelete = confirm('Are')
-    //     }
-    // }
 
-
-
-    // addNewQuote(qs) {
-    //     let quoteLenght = this.myQuotes.length;
-    // }
     constructor() {}
 
-    ngOnInit(): void {
+    ngOnInit(){
 
     }
 }
