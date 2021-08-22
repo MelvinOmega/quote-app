@@ -1,3 +1,9 @@
+## Description
+
+This is an application that displays quotes and allows users to add new quote, upvote it, downvote it or delete.
+
+
+
 # QuoteApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
@@ -25,3 +31,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Installation / Setup instruction
+* Open the Terminal
+* git clone ```https://github.com/MelvinOmega/quote-app.git```
+* cd quote-app
+* open in your favourite text editor.
+
+## Technologies used
+
+* [HTML]
+* [CSS]
+* [AngularCLI]
+
+# Known Bugs
+* There are some errors which are yet to be fixed.
+
+## Contact Information
+In case of any question or contribution, you are encouraged to email me at [melvinomega151@gmail.com]
+
+## License
+* *MIT License:*
+* copyright (c) 2021 **Melvin Omega**
+
+
