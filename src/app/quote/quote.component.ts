@@ -4,11 +4,11 @@ import { Quote } from '../quote'
 
 @Component ({
     selector: 'app-quote',
-    templateUrl: './details.component.html',
-    styleUrls: ['./details.component.css']
+    templateUrl: './quote.component.html',
+    styleUrls: ['./quote.component.css']
 })
-export class detailsComponent implements OnInit {
-    quote: Quote[] = [
+export class QuoteComponent implements OnInit {
+    quotes: Quote[] = [
         new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2021,6,9)),
         new Quote(2,'Buy Cookies','I have to buy cookies for the parrot', new Date(2021,6,2)),
         new Quote(3,'Get new Phone Case','Diana has her birthday coming up soon', new Date(2021,6,3)),
@@ -17,21 +17,31 @@ export class detailsComponent implements OnInit {
         new Quote(6,'Plot my world domination plan','Cause I am an evil overlord', new Date(2021,6,6)),
       ];
     toggleDetails(index:number) {
-        this.quote[index].showDescription = !this.quote[index].showDescription;
+        this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
 
-    // completeQuote(isComplete, index){
-    //     if (isComplete) {
-    //         this.quotes.splice(index,1);
-    //     }
-    // }
+    deleteQuote(isComplete:any, index: any){
+        if (isComplete) {
+            let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+      
+            if (toDelete){
+              this.quotes.splice(index,1)
+            }
+          }
+        }
 
-    constructor() {}
+        constructor() {}
 
-    ngOnInit(){
+        ngOnInit(){
+    
+        }
 
     }
-}
+
+
+
+
+
 
 
 
