@@ -1,12 +1,12 @@
-<div class="container">
-    <h1>MY QUOTES</h1>
+<div class="container" style="background-color: rgb(0, 113, 128); font-weight: bolder;" >
+    <h1 style="text-align: center; background-color: white; ">MY QUOTES</h1>
     <div class="row">
         <div class="col-md-6">
             <div *ngFor = 'let quote of quotes; let i = index'>
                 <div>
-                    <h4 id="{{i}} appStrikethrough">{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
+                    <h4 id="{{i}} appStrikethrough">{{quote.name}} -Written on: {{quote.completeDate|date|uppercase}}</h4>
 
-                    <button (click)='toggleDetails(i)' class="btn btn-primary" >Toggle Details</button>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary" >See More</button>
 
                 </div>
                 <div *ngIf= 'quote.showDescription' >

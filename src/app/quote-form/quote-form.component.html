@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Quote</h2>
+    <h2 class="text-center" style="background-color: rgb(231, 231, 43);">Create a new Quote</h2>
     <hr>
     <form (ngSubmit)='submitQuote()'#quoteForm='ngForm'>
         <div class="form-group">
@@ -21,12 +21,12 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="complete">Completion</label>
+            <label for="complete">Added On:</label>
             <input type='date' id="complete" required>
             <div [hidden]="name.valid|| name.pristine" class="alert alert-danger" >
                 <p>Date is required</p>
             </div>
         </div>
-        <button type="submit" class="btn btn-success">Add QUOTE</button>
+        <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
   </div>
